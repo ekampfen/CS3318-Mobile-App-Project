@@ -1,0 +1,115 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp">
+
+    <!-- Class Name -->
+    <EditText
+        android:id="@+id/classNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class Name"/>
+
+    <!-- Start Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/classStartTimeEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Start Time"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/classStartTimeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_more"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- End Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/classEndTimeEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="End Time"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/classEndTimeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_more"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Recurrence (Days of the Week) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat On"
+        android:textStyle="bold"
+        android:paddingTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox android:id="@+id/checkboxMonday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mon"/>
+        <CheckBox android:id="@+id/checkboxTuesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tue"/>
+        <CheckBox android:id="@+id/checkboxWednesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wed"/>
+        <CheckBox android:id="@+id/checkboxThursday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thu"/>
+        <CheckBox android:id="@+id/checkboxFriday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fri"/>
+    </LinearLayout>
+
+    <!-- Location -->
+    <EditText
+        android:id="@+id/classLocationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"/>
+
+    <!-- Reminders -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/classReminderEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Reminder (minutes before)"
+            android:inputType="number"/>
+
+        <ImageView
+            android:id="@+id/classReminderIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_recent_history"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
