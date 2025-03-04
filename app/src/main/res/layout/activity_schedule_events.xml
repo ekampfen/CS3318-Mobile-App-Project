@@ -91,5 +91,13 @@
             android:text="Add Class"
             android:layout_gravity="center"
             android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnSendToCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send to Google Calendar"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"/>
     </LinearLayout>
 </ScrollView>

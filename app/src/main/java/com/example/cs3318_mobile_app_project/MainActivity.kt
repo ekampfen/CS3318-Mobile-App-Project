@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnTaskManager.setOnClickListener {
-            // Placeholder for future task manager implementation
+            val intent = Intent(this, TaskManagerActivity::class.java)
+            startActivity(intent)
         }
     }
 }

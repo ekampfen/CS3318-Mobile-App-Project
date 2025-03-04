@@ -23,6 +23,7 @@
         </activity>
 
         <activity android:name=".ScheduleEventsActivity" />
+        <activity android:name=".TaskManagerActivity" />
     </application>
 
 </manifest>

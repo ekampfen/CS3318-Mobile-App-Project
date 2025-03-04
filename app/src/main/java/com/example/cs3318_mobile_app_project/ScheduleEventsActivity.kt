@@ -24,6 +24,7 @@ class ScheduleEventsActivity : AppCompatActivity() {
         val endDateIcon: ImageView = findViewById(R.id.endDateIcon)
         val classScheduleContainer: LinearLayout = findViewById(R.id.classScheduleContainer)
         val addClassButton: Button = findViewById(R.id.addClassButton)
+        val btnSendToCalendar: Button = findViewById(R.id.btnSendToCalendar)
 
         // Open Date Picker when clicking on EditText or Calendar Icon
         val dateClickListener = { editText: EditText -> showDatePicker(editText) }
@@ -35,6 +36,11 @@ class ScheduleEventsActivity : AppCompatActivity() {
         // Add class dynamically when button is clicked
         addClassButton.setOnClickListener {
             addClassSchedule(classScheduleContainer)
+        }
+
+        // Send calendar data to Google Calendar
+        btnSendToCalendar.setOnClickListener {
+            // Implement Google Calendar integration here
         }
     }
 
